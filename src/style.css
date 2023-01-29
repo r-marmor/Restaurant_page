@@ -7,18 +7,117 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Montserrat', cursive;
+}
+
+
 /* Main content */
 
 #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgb(110, 70, 70);
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: minmax(100vw, auto);
+    background-image: url('../dist/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     background-color: rgba(0,0,0,0.9);
     color: rgba(255,255,255,0.9);
-    height: 20%;
+    min-height: 200px;
+    width: 100%;
 }
 
+header h1 {
+    font-style: italic;
+    font-size: 3rem;
+}
 
+.navBtn {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
+.navBtn.active {
+    border-bottom: 2px white solid;
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 0 15px 15px 15px;
+}
+
+button:hover {
+    transform: translateY(-10%);
+    transition: 0.3s ease-in-out;
+}
+
+main {
+    background-color: rgba(0,0,0,0.45);
+    border: solid 1px black;
+    min-height: 500px;
+    max-height: auto;
+    width: 50%;
+    margin: 100px 200px;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 20px;
+}
+
+footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0,0,0,0.45);
+    height: 50px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgba(255,255,255,0.7)
+}
+
+.home {
+    min-height: 500px;
+    max-height: auto;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.cookImg {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
