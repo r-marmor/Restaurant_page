@@ -89,8 +89,9 @@ function setActiveButton(button) {
     content.appendChild(createMain());
     content.appendChild(createFooter());
 
-    setActiveButton(document.querySelector('.navBtn'));
-    loadHome();
+    
+    setActiveButton(document.querySelector('.homeBtn'));
+    loadMenu();
     
     
 })();
