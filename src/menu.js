@@ -4,22 +4,32 @@ export default function loadMenu() {
 
     menu.appendChild(createRecipeItem(
         "Pizza1", 
-        "Ingredient1, ingredient2, ingredient3, ingredient4, etc."
+        "Ingredient1, ingredient2, ingredient3, ingredient4.."
         ));
     
     menu.appendChild(createRecipeItem(
         "Pizza2", 
-        "Ingredient1, ingredient2, ingredient3, ingredient4, etc."
+        "Ingredient1, ingredient2, ingredient3, ingredient4.."
         ));
 
     menu.appendChild(createRecipeItem(
         "Pizza3", 
-        "Ingredient1, ingredient2, ingredient3, ingredient4, etc."
+        "Ingredient1, ingredient2, ingredient3, ingredient4.."
         ));
 
     menu.appendChild(createRecipeItem(
         "Pizza4", 
-        "Ingredient1, ingredient2, ingredient3, ingredient4, etc."
+        "Ingredient1, ingredient2, ingredient3, ingredient4.."
+        ));
+    
+    menu.appendChild(createRecipeItem(
+        "Pizza5", 
+        "Ingredient1, ingredient2, ingredient3, ingredient4.."
+        )); 
+    
+    menu.appendChild(createRecipeItem(
+        "Pizza6", 
+        "Ingredient1, ingredient2, ingredient3, ingredient4.."
         ));
 
     function createRecipeItem(name, description) {
@@ -29,7 +39,7 @@ export default function loadMenu() {
         const recipeImg = document.createElement('img');
         recipeImg.src = `images/pizzas/${name.toLowerCase()}.png`;
 
-        const recipeName = document.createElement('h2');
+        const recipeName = document.createElement('h4');
         recipeName.textContent = name;
         
         const recipeDesc = document.createElement('p');

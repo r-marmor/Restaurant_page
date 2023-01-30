@@ -6,7 +6,7 @@ export default function loadHome() {
     cookImg.classList.add('cookImg');
     cookImg.src = "images/cook2.jpg";
     
-    home.appendChild(createPara("The best french cuisine you'll ever taste!"));
+    home.appendChild(createPara("The best french cuisine in town!"));
     home.appendChild(createPara("Made with love since 1975"));
     home.appendChild(cookImg);
     home.appendChild(createPara("L'essayer c'est l'adopter !"));

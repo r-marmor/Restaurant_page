@@ -60,8 +60,13 @@ function createFooter() {
     copyright.textContent = `Copyright © moi  ${new Date().getFullYear()} Rafikidu37`;
 
     const githubLink = document.createElement('a');
-    githubLink.textContent = "GITHUB LINK";
     githubLink.href = "https://github.com/r-marmor/Restaurant_page";
+
+    const githubIcon = document.createElement("img");
+    githubIcon.src = "images/github_logo2.png";
+
+    githubLink.appendChild(githubIcon);
+
 
     footer.append(copyright, githubLink);
 
@@ -91,7 +96,7 @@ function setActiveButton(button) {
 
     
     setActiveButton(document.querySelector('.homeBtn'));
-    loadMenu();
+    loadHome();
     
     
 })();
